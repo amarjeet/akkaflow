@@ -60,7 +60,6 @@ public class AkkaApplication {
 
         log.info("Shutting down");
 
-        system.shutdown();
-        system.awaitTermination();
+        system.terminate();
     }
 }
